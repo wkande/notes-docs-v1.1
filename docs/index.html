@@ -50,7 +50,14 @@
         theme      : 'classic', // default
         tabComments: true,      // default
         tabHeadings: true       // default
-      }
+      },
+      plugins:[
+        function(hook, vm) {
+          hook.afterEach(function(html, next) {
+            next(html.replace(/{vrs}/g, "v1.0"));
+          });
+        }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
