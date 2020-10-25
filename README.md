@@ -7,16 +7,20 @@ Welcome to **Notes**, a demonstration project created by Warren Anderson to impl
 
 The Node.js backend, Docsify documentation and Insomnia API Definitions file were created by Warren Anderson.
 
-The Notes project is in two separate GitHub repos.
+The Notes project is in separate GitHub repos.
 
 - [wkande/notes](https://www.github.com/wkande/notes) - Node.js backend API server
-- [wkande/notes-docs](https://www.github.com/wkande/notes-docs) - Documentation
+- [wkande/notes-docs-v1.0](https://www.github.com/wkande/notes-docs-v1.0) - Documentation
 
-## API Reference Guide
+As new versions of the documentation are created each will be in their own repo. The repo name will end with the version number.
 
-The **API Reference Guide** for Notes is a set of markdown files rendered by Docisfy. You can find the source in the [wkande/notes-docs](https://www.github.com/wkande/notes-docs)  GitHub repo.
+## Documentation
 
-Visit the [API Reference Guide](https://wkande.github.io/notes-docs/) hosted by the GitHub Pages site attached to the notes-docs GitHub Repo.
+This repo maintains the the API Reference and other Doucmentation for the Notes project. The repo name contains the version of the documentation within.
+
+All documentation for Notes is a set of markdown files rendered by Docisfy. You can find the source in **/docs** folder
+
+Visit the [Note Documentation](https://wkande.github.io/notes-docs-v1.0) hosted by the GitHub Pages site attached to this repo.
 
 ## Heroku
 

@@ -20,7 +20,7 @@ This means following the same workflows as development teams, and being integrat
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ftnVllssoI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Docsify** generates documentation on the fly. It smartly loads and parses Markdown files and displays them as a website. The **API Reference Guide** for Notes is a set of markdown files rendered by Docisfy and some of its many plugins. This guide is hosted by the GitHub Pages site attached to the [Notes GitHub Repo](https://github.com/wkande/notes-docs-v1.0).
+**Docsify** generates documentation on the fly. It smartly loads and parses Markdown files and displays them as a website. The **Documentation** for Notes is a set of markdown files rendered by Docisfy and some of its many plugins. The documentation you are reading is hosted by the GitHub Pages site attached to the [notes-docs-v1.0](https://github.com/wkande/notes-docs-v1.0) GitHub Repo.
 
 **GitBook** has an online editor but will also pull markdown files from a GitHub repo. GitBook then hosts the documentation set for you.
 
