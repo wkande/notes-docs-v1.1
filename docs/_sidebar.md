@@ -28,9 +28,9 @@
 
   - [Notes](APIs/notes.md)
 
-    
-  - [Tags](APIs/tags.md)
 
+  - [Tags](APIs/tags.md)
+  
 ---
 
 <div style="margin-left:15px;;font-size:large;color:gray;font-weight:bold;">Useful Links</div>
