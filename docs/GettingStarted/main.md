@@ -1,6 +1,23 @@
+<!--------------------------------------
+About
+--------------------------------------->
 ## About
 
-Welcome to **Notes**, a demonstration project created by Warren Anderson to implement [Docsify](https://docsify.js.org) and  using the **docs-as-code** philosophy, sometimes referred to as docs-like-code. Other products like [GitBook](https://www.gitbook.com) and [MkDocs](https://www.mkdocs.org) are also a great choices.
+Welcome to **Notes**, a demonstration project created by Warren Anderson to implement [Docsify](https://docsify.js.org) and  using the **docs-as-code** philosophy, sometimes referred to as docs-like-code. Other products like [GitBook](https://www.gitbook.com) an [MkDocs](https://www.mkdocs.org) are also a great choices.
+
+<!--------------------------------------
+Releases
+--------------------------------------->
+
+## Releases
+
+A new release of the documentation is produced with every change of the minor release number 1.<span style="text-decoration: underline;">0</span>.x of the Notes backend server.
+
+Go to the [Release Information](https://github.com/wkande/notes/releases) in the **notes repo** for release information about the Notes backend server.
+
+**Current Documentation Releases**
+
+- v1.0
 
 <!--------------------------------------
 DOCS-LIKE-CODE

@@ -14,14 +14,8 @@ The Notes project is in separate GitHub repos.
 
 As new versions of the documentation are created each will be in their own repo. The repo name will end with the version number.
 
-## Documentation
+This repo maintains the API Reference and other Doucmentation for the Notes project. The repo name contains the version of the documentation within.
 
-This repo maintains the the API Reference and other Doucmentation for the Notes project. The repo name contains the version of the documentation within.
+All documentation for the Notes project is a set of markdown files rendered by Docisfy. You can find the source in **/docs** folder
 
-All documentation for Notes is a set of markdown files rendered by Docisfy. You can find the source in **/docs** folder
-
-Visit the [Note Documentation](https://wkande.github.io/notes-docs-v1.0) hosted by the GitHub Pages site attached to this repo.
-
-## Heroku
-
-There is a instance of **Notes** backend server running on Heroku. If you import the Insomnia API Definition file it will run against the Heroku backend. You can also execute CURL commnads against it found in the API Reference Guide. Since it is on a free instance of Heroku it may be idle. Any call to an API will wake it up but may take a few seconds.
+Visit the [Notes Documentation](https://wkande.github.io/notes-docs-v1.0) hosted by the GitHub Pages site attached to this repo.
