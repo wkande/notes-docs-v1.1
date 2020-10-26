@@ -14,13 +14,15 @@ Releases
 
 ## Releases
 
-A new release of the documentation is produced with every change of the minor release number 1.<span style="text-decoration: underline;">0</span>.x of the Notes backend server.
-
-Go to the [Release Information](https://github.com/wkande/notes/releases) in the **notes repo** for release information about the Notes backend server.
+A new release of the documentation is produced with every change of the major or minor number <span style="text-decoration: underline;">1</span>.<span style="text-decoration: underline;">0</span>.x in a release of the Notes backend server.
 
 **Current Documentation Releases**
 
 - v1.0
+
+**Notes Backend Releases**
+
+Go to the [Release Section](https://github.com/wkande/notes/releases) of the **notes repo** for release information about the Notes backend server.
 
 <!--------------------------------------
 DOCS-LIKE-CODE
