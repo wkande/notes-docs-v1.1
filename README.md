@@ -10,7 +10,8 @@ The Notes project is in separate GitHub repos.
 
 <!-- RELEASE # -->
 - [wkande/notes](https://www.github.com/wkande/notes) - Node.js backend API server
-- [wkande/notes-docs-v1.0](https://www.github.com/wkande/notes-docs-v1.0) - Documentation
+- [wkande/notes-docs-v1.0](https://www.github.com/wkande/notes-docs-v1.0) - Documentation v1.0
+- [wkande/notes-docs-v1.0](https://www.github.com/wkande/notes-docs-v1.1) - Documentation v1.1
 
 As new versions of the documentation are created each will be in their own repo. The repo name will end with the version number.
 
@@ -19,4 +20,4 @@ This repo maintains the API Reference and other Doucmentation for the Notes proj
 All documentation for the Notes project is a set of markdown files rendered by Docisfy. You can find the source in **/docs** folder
 
 <!-- RELEASE # -->
-Visit the [Notes Documentation](https://wkande.github.io/notes-docs-v1.0) hosted by the GitHub Pages site attached to this repo.
+Visit the [Notes Documentation](https://wkande.github.io/notes-docs-v1.1) hosted by the GitHub Pages site attached to this repo.
