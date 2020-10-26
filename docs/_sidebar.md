@@ -2,7 +2,7 @@
   This link will only work with GitHub pages, localhost will fail.
   /notes-docs-v1.0/ - must end with / or preload will look for an MD file 
 -->
-<a href="/notes-docs-v1.0/main.md">
+<a href="/">
   <div id="notesTitle">Notes<sub style="font-size:small;">v1.0</sub></div>
   <img id="notesLogo" src="assets/frog.png">
 </a>
