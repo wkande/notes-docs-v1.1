@@ -29,8 +29,13 @@ Change links to `notes-docs-x`.
 - **_sidebar**
 The sidebar currently does not recognize the {vrs} variable, update manually.
 ```html
-<a href="/notes-doc-v1.0">
-  <div id="notesTitle">Notes<sub style="font-size:small;">1.0</sub></div>
-  <img id="notesLogo" src="assets/frog.png">
-</a>
+<div id="notesTitle">Notes
+  <div class="dropdown">
+    <button class="dropbtn"><sub style="font-size:small;">v1.1 <i class="fa fa-caret-down"></i></sub></button>  
+    <div class="dropdown-content">
+        <a href="https://wkande.github.io/notes-docs-v1.1/">v1.1</a>
+        <a href="https://wkande.github.io/notes-docs-v1.0/">v1.0</a>
+    </div>
+  </div>
+</div>
 ```
