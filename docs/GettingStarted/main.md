@@ -2,10 +2,7 @@
 About
 --------------------------------------->
 ## About
-
-{vrs}
-notes-docs-{vrs}
-
+test
 Welcome to **Notes**, a demonstration project created by Warren Anderson to implement [Docsify](https://docsify.js.org) and  using the **docs-as-code** philosophy, sometimes referred to as docs-like-code. Other products like [GitBook](https://www.gitbook.com) an [MkDocs](https://www.mkdocs.org) are also a great choices.
 
 <!--------------------------------------
