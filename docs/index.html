@@ -7,8 +7,8 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-  <link rel="shortcut icon" href="assets//favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets//favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   
@@ -23,6 +23,7 @@
 
   <!-- styles.css -->
   <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/sidebar.css" />
 
   <!-- overRideHamburgerMenu.css-->
   <link rel="stylesheet" href="assets/overRideHamburgerMenu.css" />
@@ -35,7 +36,7 @@
     window.$docsify = {
       el: '#main',
       homepage: 'GettingStarted/main.md',
-      loadSidebar: '_sidebar.md',
+      loadSidebar: true,
       externalLinkTarget: '_self', // default: '_blank'
       cornerExternalLinkTarget: '_self', // default: '_blank'
       relativePath: false,
@@ -60,7 +61,10 @@
       ]
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+  <!-- docsify (latest v4.x.x)-->
+  <!--script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.js"></script-->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 
   <!-- docsify-tabs (latest v1.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
@@ -70,7 +74,6 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
 
-
   <!-- search -->
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 
@@ -78,9 +81,9 @@
   <!--script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script-->
 
   <!-- Mermaid -->
-  <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+  <!--script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
   <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"> 
-  <script>mermaid.initialize({ startOnLoad: true });</script>
+  <script>mermaid.initialize({ startOnLoad: true });</script-->
 
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8657755.js"></script>
