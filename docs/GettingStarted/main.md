@@ -30,7 +30,7 @@ MIGRATION
 
 When the Notes backend server reached v1.1.0 a new set of Documentaiton v1.1 was released. The Notes backend server has new functionality.
 
->**DELETE /notes/:id/tags**
+>**PATCH /note/:id/tags**
 
 This new endpoint removes all tags from a note. As with other endpoints the user's email is pulled from the JWT token to identify the user.
 
