@@ -5,11 +5,11 @@
 .dropbtn {
   background-color: white;
   color: olivedrab;
-  padding: 4px;
+  padding: 0px;
   font-size: 12px;
   font-style: italic;
   border: none;
-  
+  margin-left:-4px;
 }
 
 .dropdown {
