@@ -15,11 +15,26 @@ A new release of the documentation is produced with every change of the major or
 
 **Current Documentation Releases**
 
-- v1.0
+- v1.1
+- [v1.0](https://wkande.github.io/notes-docs-v1.0/)
 
 **Notes Backend Releases**
 
 Go to the [Release Section](https://github.com/wkande/notes/releases) of the **notes repo** for release information about the Notes backend server.
+
+<!--------------------------------------
+MIGRATION
+--------------------------------------->
+
+## Migration
+
+When the Notes backend server reached v1.1.0 a new set of Documentaiton v1.1 was released. The Notes backend server has new functionality.
+
+>**DELETE /notes/:id/tags**
+
+This new endpoint removes all tags from a note. As with other endpoints the user's email is pulled from the JWT token to identify the user.
+
+There are no migration steps required to use the latest release of the Notes backend server.
 
 <!--------------------------------------
 DOCS-LIKE-CODE
