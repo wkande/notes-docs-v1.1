@@ -410,7 +410,7 @@ console.log(resp.data);
   "email": "me@mydomain.com",
   "content": "This is an updated note.",
   "tags": "Monday Tuesday",
-  "dttm": "2020-10-22T12:14:33.914Z"
+  "dttm": "2020-10-26T18:21:41.833Z"
 }
 ```
 
@@ -423,7 +423,7 @@ console.log(resp.data);
   <email>warren@wyosoft.com</email>
   <content>This is an updated note.</content>
   <tags>Monday Tuesday</tags>
-  <dttm>Thu Oct 22 2020 06:15:42 GMT-0600 (Mountain Daylight Time)</dttm>
+  <dttm>2020-10-26T18:21:41.833Z</dttm>
 </note>
 ```
 
@@ -584,6 +584,102 @@ none
 
 ```xml
 none
+```
+
+<!-- tabs:end -->
+
+---
+
+<!--------------------------------------
+REMOVE NOTE TAGS
+--------------------------------------->
+
+---
+
+## Remove note Tags
+
+Removes all tags from a **Note** using the note's id and the email address. The email address in the JWT token is used to identify the user.
+
+<span class="method put">PATCH</span> /note/:id/tags
+
+---
+
+**Parameters**
+
+| Name         | Type    | In     | Description |
+| :---         | :---    | :---   | :--- |
+| Accept       | string  | header | application/json or application/xml |
+| Authorization  | string  | header | ^ Bearer JWT-token |
+| id           | string  | path   | ^ id of the note |
+
+^ required
+
+### Examples
+
+<!-- tabs:start -->
+
+##### **CURL**
+
+```bash
+curl -H "Accept:application/json" \
+-H "Authorization: Bearer 1234FRTG67"
+-X PATCH https://docs-as-code.herokuapp.com/note/X-CKYqQcj/tags | json_pp
+```
+
+##### **Javascript**
+
+```javascript
+const axios = require('axios');
+const options = {
+  "headers": {"Accept": "application/json",
+              "Authorization": "Bearer 1234FRTG67"}
+};
+
+const resp = await axios.patch("https://docs-as-code.herokuapp.com/note/X-CKYqQcj/tags",
+  {}, options)
+console.log(resp.data);
+```
+<!-- tabs:end -->
+
+### Response
+
+<!-- tabs:start -->
+
+##### **Status**
+
+```text
+- 200 OK
+- 400 Bad Request
+- 401 Unauthorized
+- 403 Forbidden
+- 429 To Many Requests
+- 431 Request Header Fields Too Large
+- 500 Internal server error
+```
+
+##### **JSON**
+
+```json
+{
+  "id": "X-CKYqQcj",
+  "email": "me@mydomain.com",
+  "content": "This is the note content.",
+  "tags": null,
+  "dttm": "2020-10-26T18:21:41.833Z"
+}
+```
+
+##### **XML**
+
+```xml
+<?xml version='1.0'?>
+<note>
+  <id>X-CKYqQcj</id>
+  <email>me@mydomain.com</email>
+  <content>This is the note content.</content>
+  <tags>null</tags>
+  <dttm>2020-10-26T18:21:41.833Z</dttm>
+</note>
 ```
 
 <!-- tabs:end -->
