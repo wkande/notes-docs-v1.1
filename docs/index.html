@@ -42,7 +42,7 @@
       relativePath: false,
       //name: "Notes",
       //logo:"assets/frog.png",
-      repo: 'https://github.com/wkande/notes-docs-v1.0',
+      repo: 'https://github.com/wkande/notes-docs-v1.1',
       search: 'auto',
       subMaxLevel: 2,
       tabs: {
@@ -55,7 +55,7 @@
       plugins:[
         function(hook, vm) {
           hook.afterEach(function(html, next) {
-            next(html.replace(/{vrs}/g, "v1.0"));
+            next(html.replace(/{vrs}/g, "v1.1"));
           });
         }
       ]
