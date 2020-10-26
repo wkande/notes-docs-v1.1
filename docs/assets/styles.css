@@ -8,11 +8,9 @@
   --theme-color:mediumvioletred;*/
   /* Change the theme color hue */
   /*--theme-hue: 325;
-
   --link-color:mediumvioletred;*/
-
-  
 }
+
 .sidebar-title{
   font-size:x-large;
   color:gray;
@@ -60,3 +58,4 @@
 .options{
   background-color:gold;
 }
+
