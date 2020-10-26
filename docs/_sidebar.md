@@ -1,8 +1,8 @@
 <!-- For GitHub pages the path must be /notes -->
 <!-- Dev the path must be / -->
 <!-- RELEASE # -->
-<a href="/notes-doc-v1.0">
-  <div id="notesTitle">Notes<sub style="font-size:small;">1.0</sub></div>
+<a href="/notes-docs-v1.0">
+  <div id="notesTitle">Notes<sub style="font-size:small;">v1.0</sub></div>
   <img id="notesLogo" src="assets/frog.png">
 </a>
 
