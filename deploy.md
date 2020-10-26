@@ -4,19 +4,23 @@ With every **minor** release (major.minor.patch) of the Notes backend a new rele
 
 ## Version Variable
 
-Set the documentation version in the index.html Docsify script and teh repo link.
+Set the documentation version in the index.html Docsify script and the repo link.
 
 ```javascript
 plugins:[
   function(hook, vm) {
     hook.afterEach(function(html, next) {
-      next(html.replace(/{vrs}/g, "v1.0"));
+      next(html.replace(/{vrs}/g, "v1.1"));
     });
   }
 ]
 
-repo: 'https://github.com/wkande/notes-docs-v1.0'
+repo: 'https://github.com/wkande/notes-docs-v1.1'
 ```
+
+## Insomnia
+
+1. Export Insomnia AP Definitions > create Zip file into the assets folder.
 
 ## Releases Section
 
