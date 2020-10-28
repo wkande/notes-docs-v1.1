@@ -14,7 +14,14 @@ Collect the user's email address and send it to the [POST /user/code](#Get-A-Tok
 
 Most email gateways will accept an email address and enter it into a queue to be delivered in the future. This does not guarantee delivery. This endpoint will return a status=201 once the gateway "accepts" the email address for delivery, though it might fail in the future.
 
-<span class="method post">POST</span> /user/code
+<!-- RUN API -->
+<button id="create_a_code_button" class="method post" onclick="create_a_code()">POST</button>/user/code
+<code id="create_a_code_status" style="display:none;"></code>
+<a id="create_a_code_closebox" href="javascript:close('create_a_code');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="create_a_code_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="create_a_code_data" class="tryitPre"></pre>
 
 ---
 
@@ -105,7 +112,14 @@ GET A TOKEN
 
 Send the code received from [POST /user/code](#Create-A-Code) to **GET /user/token**. The JWT token returned by GET /user/token is used to access other endpoints.
 
-<span class="method get">GET</span> /user/token
+<!-- RUN API -->
+<button id="get_a_token_button" class="method get" onclick="get_a_token()">GET</button>/user/token
+<code id="get_a_token_status" style="display:none;"></code>
+<a id="get_a_token_closebox" href="javascript:close('get_a_token');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="get_a_token_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="get_a_token_data" class="tryitPre"></pre>
 
 ---
 
@@ -186,7 +200,15 @@ GET CURRENT USER
 
 Gets information about the current user. The email address in the JWT token is used to identify the user.
 
-<span class="method get">GET</span> /user
+<!--span class="method get">GET</span> /user-->
+<!-- RUN API -->
+<button id="get_current_user_button" class="method get" onclick="get_current_user()">GET</button>/user
+<code id="get_current_user_status" style="display:none;"></code>
+<a id="get_current_user_closebox" href="javascript:close('get_current_user');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="get_current_user_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="get_current_user_data" class="tryitPre"></pre>
 
 ---
 
