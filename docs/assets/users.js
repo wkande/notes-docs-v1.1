@@ -1,7 +1,7 @@
 /**
  * Variables used by the TRY ME buttons
  */
-const base_url = 'http://localhost:3001';
+const base_url = 'https://docs-as-code.herokuapp.com';
 
 function start(id){
   // Must use visibility for the spinner
