@@ -2,6 +2,7 @@
  * Variables used by the TRY ME buttons
  */
 const base_url = 'https://docs-as-code.herokuapp.com';
+//const base_url = 'http://localhost:3001';
 
 function start(id){
   // Must use visibility for the spinner
@@ -65,11 +66,16 @@ executeIt = async (url, settings, prefix) => {
       elem.innerHTML = "Deleted";
     }
     
-    // Store the note ID
-    // A note is the only object with an id
+    // Store note ID  to LocalStorage
     if(res.status != 204 && data.id){
       localStorage.setItem("note_id", data.id);
     }
+
+    // Store token to LocalStorage
+    if(res.status == 200 && data.token){
+      localStorage.setItem("token", data.token);
+    }
+
   }
   catch(err){
     console.error(err);
@@ -82,7 +88,7 @@ executeIt = async (url, settings, prefix) => {
 
 create_a_code = async () => {
   // Prompts
-  var email = prompt("Please enter your email address.\nA code will be sent to you.", localStorage.getItem('email'));
+  var email = prompt("Please enter your email address.\nA code will be sent to you.", localStorage.getItem('email') || '');
   console.log('email:', email)
   if(email === null) return;
   else if(email.trim() === '')
