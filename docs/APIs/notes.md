@@ -31,7 +31,14 @@ There is an optional search to filter the notes by content and tags. Optional pa
 - **/notes?tags=Saturday%20Tuesday** (notes with Saturday or Tuesday in the tags)
 - **/notes?content=Madison&skip=0&limit=25** (first 25 notes with Madison in the content)
 
-<span class="method get">GET</span> /notes
+<!-- RUN API -->
+<button id="get_user_notes_button" class="method get" onclick="get_user_notes()">GET</button>/notes
+<code id="get_user_notes_status" style="display:none;"></code>
+<a id="get_user_notes_closebox" href="javascript:close('get_user_notes');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="get_user_notes_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="get_user_notes_data" class="tryitPre"></pre>
 
 ---
 
@@ -146,7 +153,14 @@ GET A NOTE
 
 Gets a single note. A note identified by the note's id must belong to the user. The email address in the JWT token is used to identify the user.
 
-<span class="method get">GET</span> /note/:id
+<!-- RUN API -->
+<button id="get_a_note_button" class="method get" onclick="get_a_note()">GET</button>/note/:id
+<code id="get_a_note_status" style="display:none;"></code>
+<a id="get_a_note_closebox" href="javascript:close('get_a_note');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="get_a_note_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="get_a_note_data" class="tryitPre"></pre>
 
 ---
 
@@ -241,7 +255,14 @@ CREATE A NOTE
 
 Creates a new **Note** using the email address in the JWT token passed in the header.
 
-<span class="method post">POST</span> /note
+<!-- RUN API -->
+<button id="create_a_note_button" class="method get" onclick="create_a_note()">POST</button>/note
+<code id="create_a_note_status" style="display:none;"></code>
+<a id="create_a_note_closebox" href="javascript:close('create_a_note');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="create_a_note_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="create_a_note_data" class="tryitPre"></pre>
 
 ---
 
@@ -339,7 +360,14 @@ UPDATE A NOTE
 
 Updates the content and/or the tags of a **Note** using the note's id and the email address. The email address in the JWT token is used to identify the user.
 
-<span class="method put">PUT</span> /note/:id
+<!-- RUN API -->
+<button id="update_a_note_button" class="method put" onclick="update_a_note()">PUT</button>/note/:id
+<code id="update_a_note_status" style="display:none;"></code>
+<a id="update_a_note_closebox" href="javascript:close('update_a_note');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="update_a_note_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="update_a_note_data" class="tryitPre"></pre>
 
 ---
 
@@ -439,7 +467,14 @@ DELETE A NOTE
 
 Deletes a **Note** using the note's id and the email address. The email address in the JWT token is used to identify the user.
 
-<span class="method delete">DELETE</span> /note/:id
+<!-- RUN API -->
+<button id="delete_a_note_button" class="method delete" onclick="delete_a_note()">DELETE</button>/note/:id
+<code id="delete_a_note_status" style="display:none;"></code>
+<a id="delete_a_note_closebox" href="javascript:close('delete_a_note');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="delete_a_note_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="delete_a_note_data" class="tryitPre"></pre>
 
 ---
 
@@ -517,9 +552,16 @@ DELETE USER'S NOTEs
 
 ## Delete user's Notes
 
-Deletes all **Note** of a particular user. The email address in the JWT token is used to identify the user.
+Deletes all the **Notes** of a particular user. The email address in the JWT token is used to identify the user.
 
-<span class="method delete">DELETE</span> /notes
+<!-- RUN API -->
+<button id="delete_user_notes_button" class="method delete" onclick="delete_user_notes()">DELETE</button>/notes
+<code id="delete_user_notes_status" style="display:none;"></code>
+<a id="delete_user_notes_closebox" href="javascript:close('delete_user_notes');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="delete_user_notes_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="delete_user_notes_data" class="tryitPre"></pre>
 
 ---
 
@@ -600,7 +642,14 @@ REMOVE NOTE TAGS
 
 Removes all tags from a **Note** using the note's id and the email address. The email address in the JWT token is used to identify the user.
 
-<span class="method put">PATCH</span> /note/:id/tags
+<!-- RUN API -->
+<button id="remove_note_tags_button" class="method patch" onclick="remove_note_tags()">PATCH</button>/note/:id/tags
+<code id="remove_note_tags_status" style="display:none;"></code>
+<a id="remove_note_tags_closebox" href="javascript:close('remove_note_tags');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="remove_note_tags_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="remove_note_tags_data" class="tryitPre"></pre>
 
 ---
 

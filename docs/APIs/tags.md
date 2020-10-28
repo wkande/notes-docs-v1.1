@@ -22,7 +22,14 @@ GET USER'S TAGS
 
 Gets a list of unique **Tags** used within a user's notes. The email address in the JWT token is used to identify the user.
 
-<span class="method get">GET</span> /tags
+<!-- RUN API -->
+<button id="get_user_tags_button" class="method get" onclick="get_user_tags()">GET</button>/tags
+<code id="get_user_tags_status" style="display:none;"></code>
+<a id="get_user_tags_closebox" href="javascript:close('get_user_tags');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="get_user_tags_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="get_user_tags_data" class="tryitPre"></pre>
 
 ---
 
@@ -115,7 +122,13 @@ UPDATE A TAG
 
 Updates a particular **Tag** within all notes of the current user. Useful to correct misspelled tags. The old tag is passed in the path and the new tag spelling is passed in the body. The email address in the JWT token is used to identify the user.
 
-<span class="method put">PUT</span> /tag/:tag
+<button id="update_a_tag_button" class="method put" onclick="update_a_tag()">PUT</button>/tag/:tag
+<code id="update_a_tag_status" style="display:none;"></code>
+<a id="update_a_tag_closebox" href="javascript:close('update_a_tag');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="update_a_tag_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="update_a_tag_data" class="tryitPre"></pre>
 
 ---
 
@@ -126,7 +139,8 @@ Updates a particular **Tag** within all notes of the current user. Useful to cor
 | Content-Type | string  | header | ^ application/x-www-form-urlencoded |
 | Accept       | string  | header | application/json or application/xml |
 | Authorization  | string  | header | ^ Bearer JWT-token |
-| tag           | string  | path   | ^ new spelling of the tag |
+| tag           | string  | path   | ^ old spelling of the tag |
+| tag           | string  | body   | ^ new spelling of the tag |
 
 ^ required
 
@@ -203,7 +217,13 @@ DELETE A TAG
 
 Deletes a particular **Tag** from all notes of the current user. The email address in the JWT token is used to identify the user.
 
-<span class="method delete">DELETE</span> /tag/:tag
+<button id="delete_a_tag_button" class="method delete" onclick="delete_a_tag()">DELETE</button>/tag/:tag
+<code id="delete_a_tag_status" style="display:none;"></code>
+<a id="delete_a_tag_closebox" href="javascript:close('delete_a_tag');" style="color:gray;display:none;text-decoration:none;"> 
+  <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+<i id="delete_a_tag_spinner" class="fa fa-spinner fa-spin" aria-hidden="true" style="visibility:hidden;"></i>
+<pre id="delete_a_tag_data" class="tryitPre"></pre>
 
 ---
 
