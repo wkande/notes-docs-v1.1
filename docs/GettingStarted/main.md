@@ -54,14 +54,17 @@ This means following the same workflows as development teams, and being integrat
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ftnVllssoI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!-- RELEASE # -->
-**Docsify** generates documentation on the fly. It smartly loads and parses Markdown files and displays them as a website. The **Documentation** for Notes is a set of markdown files rendered by Docisfy and some of its many plugins. The documentation you are reading is hosted by the GitHub Pages site attached to the [notes-docs-{vrs}](https://github.com/wkande/notes-docs-{vrs}) GitHub Repo.
+
+### Tooling
+**ReDoc** is considered the Gold-Standard by many developers. It can render OpenAPI v2.0 or v3.0 files.
+
+**Docsify** generates documentation on the fly. It smartly loads and parses Markdown files and displays them as a website. The documentationd for Notes is a set of markdown files rendered by Docisfy and some of its many plugins. The documentation you are reading is hosted by the GitHub Pages site attached to the [notes-docs-{vrs}](https://github.com/wkande/notes-docs-{vrs}) GitHub Repo.
 
 **GitBook** has an online editor but will also pull markdown files from a GitHub repo. GitBook then hosts the documentation set for you.
 
 **MkDocs** a simple to use markdown renderer that focuses on a single but small YAML definitions file.
 
-**Git** is a major player for docs-like-code. Documentation is often stored right along side the code. The most common practice is to store the docs in a separate repo from the code, while both repos exist within the same organization..
+**Git** is a major player for docs-like-code. Documentation is often stored right along side the code using Git. The most common practice is to store the docs in a separate repo from the code, while both repos exist within the same organization.
 
 > Store docs in the same repo as the code.
 > <br>Usually when the Developer is also the Tech Writer.
