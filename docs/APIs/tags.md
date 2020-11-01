@@ -202,7 +202,9 @@ console.log(resp.data);
 ##### **XML**
 
 ```xml
-none
+<?xml version='1.0'?>
+<tag_old>sartuday</tag_old>
+<tag_new>Saturday</tag_new>
 ```
 
 <!-- tabs:end -->
