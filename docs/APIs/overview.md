@@ -3,13 +3,22 @@
 The APIs implement an **Email-Code-Token** mechanism for authentication using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
 
 1. Prompt the user for their **Email Address** and call POST /user/code. The endpoint will send a **Code** to the email address and respond with status=201.
+  ```bash
+    curl -d "email=me@domain.com" \
+    -H "Content-Type: application/x-www-form-urlencoded" \
+    -X POST https://docs-as-code.herokuapp.com/user/code
+  ```
 
-1. Prompt the user for their **Code** and send it to GET /user/token. The endpoint will respond with a **Token** and status=200.
+1. Prompt the user for the **Code** and their **Email**. Send both to GET /user/token. The endpoint will respond with a **Token** and status=200.
+  ```bash
+    curl -H "Accept:application/json" \
+    -X GET "https://docs-as-code.herokuapp.com/user/token?email=me@mydomain.com&code=123456" \
+    | json_pp
+  ```
 
 The **Token** must be used to authenticate all other endpoints.
 
 Try the **Email-Code-Token** mechanism using Insomnia. See the [Insomnia](/#Insomnia) section of this guide for more information.
-
 
 ## Base URL
 
