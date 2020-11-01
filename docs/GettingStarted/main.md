@@ -11,7 +11,7 @@ Releases
 
 ## Releases
 
-A new release of the documentation is produced with every change of the major or minor number <span style="text-decoration: underline;">1</span>.<span style="text-decoration: underline;">0</span>.x in a release of the Notes backend server.
+A new release of the documentation is produced with every change of the major or minor number <span style="text-decoration: underline;">1</span>.<span style="text-decoration: underline;">0</span>.x for releases of the Notes backend server.
 
 **Current Documentation Releases**
 
@@ -56,9 +56,10 @@ This means following the same workflows as development teams, and being integrat
 
 
 ### Tooling
-**ReDoc** is considered the Gold-Standard by many developers. It can render OpenAPI v2.0 or v3.0 files.
 
-**Docsify** generates documentation on the fly. It smartly loads and parses Markdown files and displays them as a website. The documentationd for Notes is a set of markdown files rendered by Docisfy and some of its many plugins. The documentation you are reading is hosted by the GitHub Pages site attached to the [notes-docs-{vrs}](https://github.com/wkande/notes-docs-{vrs}) GitHub Repo.
+**ReDoc** can render OpenAPI files. OpenAPI is used as a standard by the developer community to work with APIs. These docs are also available using ReDoc and are hosted on [Redoc.ly](https://www.redoc.ly) at [https://itchy-deer-87.redoc.ly](https://itchy-deer-87.redoc.ly)
+
+**Docsify** generates documentation on the fly. It smartly loads and parses Markdown files and displays them as a website. The documentation for Notes is a set of markdown files rendered by Docisfy and some of its many plugins. The documentation you are reading is hosted by the GitHub Pages site attached to the [notes-docs-{vrs}](https://github.com/wkande/notes-docs-{vrs}) GitHub Repo.
 
 **GitBook** has an online editor but will also pull markdown files from a GitHub repo. GitBook then hosts the documentation set for you.
 
